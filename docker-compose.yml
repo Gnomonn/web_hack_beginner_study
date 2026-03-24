@@ -13,6 +13,7 @@ services:
     volumes:
       - ./backend:/app
       - /app/node_modules
+      - backend-db:/app/db
     networks:
       - app-network
 
@@ -53,3 +54,4 @@ volumes:
   certbot-etc:
   certbot-var:
   webroot:
+  backend-db:
